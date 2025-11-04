@@ -1,15 +1,6 @@
-using System;
 using System.Diagnostics;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
-using Castle.DynamicProxy;
-using Confluent.Kafka;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using OpenTelemetry.Context.Propagation;
-using Otel.Kafka.Interceptors.Options;
-using Otel.Kafka.Interceptors.Rules;
 
 namespace Otel.Kafka.Interceptors.Interception;
 

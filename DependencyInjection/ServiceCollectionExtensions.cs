@@ -1,14 +1,4 @@
-using System;
 using System.Diagnostics;
-using System.Linq;
-using Castle.DynamicProxy;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Options;
-using Otel.Kafka.Interceptors.Interception;
-using Otel.Kafka.Interceptors.Options;
-using Otel.Kafka.Interceptors.Rules;
 
 namespace Otel.Kafka.Interceptors.DependencyInjection;
 
