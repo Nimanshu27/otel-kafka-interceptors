@@ -1,0 +1,5 @@
+/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/obj/Debug/net8.0/Otel.Kafka.Interceptors.csproj.AssemblyReference.cache
+/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/obj/Debug/net8.0/Otel.Kafka.Interceptors.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/obj/Debug/net8.0/Otel.Kafka.Interceptors.AssemblyInfoInputs.cache
+/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/obj/Debug/net8.0/Otel.Kafka.Interceptors.AssemblyInfo.cs
+/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/obj/Debug/net8.0/Otel.Kafka.Interceptors.csproj.CoreCompileInputs.cache

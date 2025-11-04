@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Otel.Kafka.Interceptors</name>
+    </assembly>
+    <members>
+        <member name="T:Otel.Kafka.Interceptors.Options.OtelKafkaInterceptorOptions">
+            <summary>
+            Root configuration options for the OpenTelemetry interceptor library.
+            </summary>
+        </member>
+        <member name="P:Otel.Kafka.Interceptors.Options.OtelKafkaInterceptorOptions.ActivitySourceName">
+            <summary>
+            Name supplied to <see cref="T:System.Diagnostics.ActivitySource"/>.
+            </summary>
+        </member>
+        <member name="P:Otel.Kafka.Interceptors.Options.OtelKafkaInterceptorOptions.Kafka">
+            <summary>
+            Kafka specific configuration.
+            </summary>
+        </member>
+        <member name="P:Otel.Kafka.Interceptors.Options.OtelKafkaInterceptorOptions.Rules">
+            <summary>
+            Exact type/method rules applied first.
+            </summary>
+        </member>
+        <member name="P:Otel.Kafka.Interceptors.Options.OtelKafkaInterceptorOptions.Expressions">
+            <summary>
+            Pattern based rules evaluated after exact matches.
+            </summary>
+        </member>
+        <member name="T:Otel.Kafka.Interceptors.Options.KafkaOptions">
+            <summary>
+            Options controlling Kafka specific propagation behaviour.
+            </summary>
+        </member>
+    </members>
+</doc>

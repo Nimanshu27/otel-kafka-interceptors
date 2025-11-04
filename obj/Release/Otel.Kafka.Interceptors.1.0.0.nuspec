@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Otel.Kafka.Interceptors</id>
+    <version>1.0.0</version>
+    <authors>Otel.Kafka.Interceptors</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Castle.Core" version="5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Confluent.Kafka" version="2.12.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options.ConfigurationExtensions" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="OpenTelemetry" version="1.13.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/bin/Release/net8.0/Otel.Kafka.Interceptors.dll" target="lib/net8.0/Otel.Kafka.Interceptors.dll" />
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/bin/Release/net8.0/Otel.Kafka.Interceptors.xml" target="lib/net8.0/Otel.Kafka.Interceptors.xml" />
+  </files>
+</package>
