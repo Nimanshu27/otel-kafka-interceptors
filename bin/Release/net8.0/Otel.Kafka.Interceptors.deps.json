@@ -14,7 +14,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
           "Microsoft.Extensions.Options": "9.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.0",
-          "OpenTelemetry": "1.13.1"
+          "OpenTelemetry": "1.13.1",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.13.0",
+          "OpenTelemetry.Extensions.Hosting": "1.13.0",
+          "OpenTelemetry.Instrumentation.Http": "1.13.0"
         },
         "runtime": {
           "Otel.Kafka.Interceptors.dll": {}
@@ -232,6 +235,32 @@
           }
         }
       },
+      "Microsoft.Extensions.FileProviders.Abstractions/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
+      },
+      "Microsoft.Extensions.Hosting.Abstractions/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "9.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
@@ -346,6 +375,42 @@
           }
         }
       },
+      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.13.0": {
+        "dependencies": {
+          "OpenTelemetry": "1.13.1"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.13.0.1801"
+          }
+        }
+      },
+      "OpenTelemetry.Extensions.Hosting/1.13.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
+          "OpenTelemetry": "1.13.1"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.13.0.1801"
+          }
+        }
+      },
+      "OpenTelemetry.Instrumentation.Http/1.13.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0",
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.13.1"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Instrumentation.Http.dll": {
+            "assemblyVersion": "1.13.0.701",
+            "fileVersion": "1.13.0.701"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/9.0.0": {
         "runtime": {
           "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
@@ -447,6 +512,20 @@
       "path": "microsoft.extensions.diagnostics.abstractions/9.0.0",
       "hashPath": "microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.FileProviders.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uK439QzYR0q2emLVtYzwyK3x+T5bTY4yWsd/k/ZUS9LR6Sflp8MIdhGXW8kQCd86dQD4tLqvcbLkku8qHY263Q==",
+      "path": "microsoft.extensions.fileproviders.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Hosting.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yUKJgu81ExjvqbNWqZKshBbLntZMbMVz/P7Way2SBx7bMqA08Mfdc9O7hWDKAiSp+zPUGT6LKcSCQIPeDK+CCw==",
+      "path": "microsoft.extensions.hosting.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -509,6 +588,27 @@
       "sha512": "sha512-x8QXMsrIyp+XzDUFQAM+C4upAPNbwaBIPjTWEoonziWAav6weS8OxsMKrE4wz7Zly8ATlsoxk0mWZ+PHO3Wg0w==",
       "path": "opentelemetry.api.providerbuilderextensions/1.13.1",
       "hashPath": "opentelemetry.api.providerbuilderextensions.1.13.1.nupkg.sha512"
+    },
+    "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x9vDndVSOYtatNILVDJiZKmRzg987j8UjcOggGoT0spS1OGobKbNtA3BxvtsUsACqC6q6/m+jHpgv4/5ncs/bg==",
+      "path": "opentelemetry.exporter.opentelemetryprotocol/1.13.0",
+      "hashPath": "opentelemetry.exporter.opentelemetryprotocol.1.13.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Extensions.Hosting/1.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x0lNrogp6gP+yb8BnGwA1a3aa+KELARNC/ti1aiWIhqztMOliVyhSXNWPznoL1x+JrwpBE+iJqV66m21131ZRA==",
+      "path": "opentelemetry.extensions.hosting/1.13.0",
+      "hashPath": "opentelemetry.extensions.hosting.1.13.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Instrumentation.Http/1.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B+nmCn3/orrLhUuCC6WwHh9JUkIV/wubpZ+vYOf2CedjOZupgcQcx96Kwy6UVjdNDWGxsEw0jXWXZUQlYnmRqA==",
+      "path": "opentelemetry.instrumentation.http/1.13.0",
+      "hashPath": "opentelemetry.instrumentation.http.1.13.0.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/9.0.0": {
       "type": "package",

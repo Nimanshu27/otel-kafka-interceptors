@@ -1,0 +1,17 @@
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.deps.json
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.dll
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.pdb
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Debug/net8.0/Otel.Kafka.Interceptors.dll
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Debug/net8.0/Otel.Kafka.Interceptors.pdb
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Debug/net8.0/Otel.Kafka.Interceptors.xml
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.csproj.AssemblyReference.cache
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.AssemblyInfoInputs.cache
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.AssemblyInfo.cs
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.csproj.CoreCompileInputs.cache
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.sourcelink.json
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kaf.461650AF.Up2Date
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.dll
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/refint/Otel.Kafka.Interceptors.StartupHook.dll
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/Otel.Kafka.Interceptors.StartupHook.pdb
+/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/Debug/net8.0/ref/Otel.Kafka.Interceptors.StartupHook.dll

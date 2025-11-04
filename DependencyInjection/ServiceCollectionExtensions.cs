@@ -19,12 +19,16 @@ public static class ServiceCollectionExtensions
         IConfiguration? configurationSection = null,
         Action<OtelKafkaInterceptorOptions>? configure = null)
     {
+        var bootstrapOptions = new OtelKafkaInterceptorOptions();
+
         if (configurationSection != null)
         {
+            configurationSection.Bind(bootstrapOptions);
             services.Configure<OtelKafkaInterceptorOptions>(configurationSection);
         }
         if (configure != null)
         {
+            configure(bootstrapOptions);
             services.Configure(configure);
         }
         services.TryAddSingleton<IProxyGenerator, ProxyGenerator>();
@@ -38,6 +42,7 @@ public static class ServiceCollectionExtensions
 
         services.TryAddSingleton<OpenTelemetryInterceptor>();
 
+        AutomaticProxyRegistration.Apply(services, bootstrapOptions);
 
         return services;
     }

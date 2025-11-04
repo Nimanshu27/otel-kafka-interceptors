@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/Otel.Kafka.Interceptors.StartupHook.csproj": {}
+  },
+  "projects": {
+    "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj",
+        "projectName": "Otel.Kafka.Interceptors",
+        "projectPath": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj",
+        "packagesPath": "/Users/Nimanshukumar.Patel/.nuget/packages/",
+        "outputPath": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Nimanshukumar.Patel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.13.1, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/Otel.Kafka.Interceptors.StartupHook.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/Otel.Kafka.Interceptors.StartupHook.csproj",
+        "projectName": "Otel.Kafka.Interceptors.StartupHook",
+        "projectPath": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/Otel.Kafka.Interceptors.StartupHook.csproj",
+        "packagesPath": "/Users/Nimanshukumar.Patel/.nuget/packages/",
+        "outputPath": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Nimanshukumar.Patel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj": {
+                "projectPath": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.21, 8.0.21]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
