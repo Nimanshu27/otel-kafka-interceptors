@@ -1,0 +1,26 @@
+<Project>
+  <PropertyGroup>
+    <OtelKafkaCopyStartupHook Condition="'$(OtelKafkaCopyStartupHook)' == ''">true</OtelKafkaCopyStartupHook>
+    <OtelKafkaStartupHookPackagePath>$(MSBuildThisFileDirectory)..\contentFiles\any\any\startupHook\Otel.Kafka.Interceptors.StartupHook.dll</OtelKafkaStartupHookPackagePath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(OtelKafkaCopyStartupHook)' == 'true' and Exists('$(OtelKafkaStartupHookPackagePath)')">
+    <OtelKafkaStartupHook Include="$(OtelKafkaStartupHookPackagePath)" />
+  </ItemGroup>
+
+  <Target Name="CopyOtelKafkaStartupHookToOutput"
+          AfterTargets="Build"
+          Condition="'$(OtelKafkaCopyStartupHook)' == 'true' and '@(OtelKafkaStartupHook)' != ''">
+    <Copy SourceFiles="@(OtelKafkaStartupHook)"
+          DestinationFolder="$(OutDir)"
+          SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="CopyOtelKafkaStartupHookToPublish"
+          AfterTargets="Publish"
+          Condition="'$(OtelKafkaCopyStartupHook)' == 'true' and '@(OtelKafkaStartupHook)' != '' and '$(PublishDir)' != ''">
+    <Copy SourceFiles="@(OtelKafkaStartupHook)"
+          DestinationFolder="$(PublishDir)"
+          SkipUnchangedFiles="true" />
+  </Target>
+</Project>

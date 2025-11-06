@@ -5,7 +5,7 @@
   },
   "projects": {
     "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj",
         "projectName": "Otel.Kafka.Interceptors",

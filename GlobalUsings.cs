@@ -1,0 +1,11 @@
+global using Castle.DynamicProxy;
+global using Confluent.Kafka;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.DependencyInjection.Extensions;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Options;
+global using OpenTelemetry.Context.Propagation;
+global using Otel.Kafka.Interceptors.Interception;
+global using Otel.Kafka.Interceptors.Options;
+global using Otel.Kafka.Interceptors.Rules;

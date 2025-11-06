@@ -188,6 +188,25 @@ Enable richer diagnostics by setting `Logging:LogLevel:Default=Debug` in configu
 - `Confluent.Kafka` 2.12.0 (override via your project file if needed).
 - Tested against `OpenTelemetry` 1.13.0 packages.
 
+## Packaging & Publishing
+
+1. Update the metadata in `Otel.Kafka.Interceptors.csproj` (especially `<Version>`, `<Authors>`, and `<PackageTags>`).
+2. Produce the NuGet package and symbols:
+   ```bash
+   dotnet pack otel-kafka-interceptors/Otel.Kafka.Interceptors.csproj -c Release
+   ```
+   The output appears under `otel-kafka-interceptors/bin/Release`.
+3. (Optional) Push to a feed:
+   ```bash
+   dotnet nuget push bin/Release/Otel.Kafka.Interceptors.<version>.nupkg --source https://api.nuget.org/v3/index.json
+   ```
+4. For local testing, add the `bin/Release` folder as a source and install the package from a consumer app:
+   ```bash
+   dotnet nuget add source $(pwd)/otel-kafka-interceptors/bin/Release --name otel-local
+   dotnet add <path-to-app>.csproj package Otel.Kafka.Interceptors --version <version>
+   ```
+5. The package copies `Otel.Kafka.Interceptors.StartupHook.dll` into the consumer's output folder automatically. Point `DOTNET_STARTUP_HOOKS` at `$(DOTNET_ROOT)/.../bin/<tfm>/Otel.Kafka.Interceptors.StartupHook.dll` during runtime.
+
 ## Roadmap Ideas
 - Additional envelope detection for popular Kafka abstractions.
 - Metrics/logging emitters alongside traces.

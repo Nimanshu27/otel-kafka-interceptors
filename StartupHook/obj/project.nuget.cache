@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h5bJH1CuBbw=",
+  "dgSpecHash": "ijscDNs0f5E=",
   "success": true,
   "projectFilePath": "/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/Otel.Kafka.Interceptors.StartupHook.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,7 @@
     "/Users/Nimanshukumar.Patel/.nuget/packages/opentelemetry.instrumentation.http/1.13.0/opentelemetry.instrumentation.http.1.13.0.nupkg.sha512",
     "/Users/Nimanshukumar.Patel/.nuget/packages/system.diagnostics.diagnosticsource/9.0.0/system.diagnostics.diagnosticsource.9.0.0.nupkg.sha512",
     "/Users/Nimanshukumar.Patel/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "/Users/Nimanshukumar.Patel/.nuget/packages/otel.kafka.interceptors/1.0.0/otel.kafka.interceptors.1.0.0.nupkg.sha512",
+    "/Users/Nimanshukumar.Patel/.nuget/packages/otel.kafka.interceptors/1.0.1/otel.kafka.interceptors.1.0.1.nupkg.sha512",
     "/Users/Nimanshukumar.Patel/.nuget/packages/microsoft.netcore.app.ref/8.0.21/microsoft.netcore.app.ref.8.0.21.nupkg.sha512",
     "/Users/Nimanshukumar.Patel/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.21/microsoft.aspnetcore.app.ref.8.0.21.nupkg.sha512"
   ],

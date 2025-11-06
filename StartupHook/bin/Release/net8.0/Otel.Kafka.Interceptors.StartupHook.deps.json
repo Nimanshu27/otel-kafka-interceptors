@@ -9,7 +9,7 @@
       "Otel.Kafka.Interceptors.StartupHook/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
-          "Otel.Kafka.Interceptors": "1.0.0"
+          "Otel.Kafka.Interceptors": "1.0.1"
         },
         "runtime": {
           "Otel.Kafka.Interceptors.StartupHook.dll": {}
@@ -433,7 +433,7 @@
           }
         }
       },
-      "Otel.Kafka.Interceptors/1.0.0": {
+      "Otel.Kafka.Interceptors/1.0.1": {
         "dependencies": {
           "Castle.Core": "5.2.1",
           "Confluent.Kafka": "2.12.0",
@@ -448,8 +448,8 @@
         },
         "runtime": {
           "Otel.Kafka.Interceptors.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       }
@@ -636,7 +636,7 @@
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
-    "Otel.Kafka.Interceptors/1.0.0": {
+    "Otel.Kafka.Interceptors/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

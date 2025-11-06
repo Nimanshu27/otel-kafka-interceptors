@@ -7,6 +7,25 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Otel.Kafka.Interceptors</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Owner</Authors>
+    <Company>Owner</Company>
+    <Description>Configuration-driven OpenTelemetry interceptors for Kafka producers and consumers, with zero-touch startup hook support.</Description>
+    <PackageTags>opentelemetry;kafka;tracing;diagnostics;interceptors</PackageTags>
+    <RepositoryUrl>https://github.com/your-org/otel-kafka-interceptors</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/your-org/otel-kafka-interceptors</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Castle.Core" Version="5.2.1" />
     <PackageReference Include="Confluent.Kafka" Version="2.12.0" />
@@ -25,4 +44,34 @@
     <EmbeddedResource Remove="StartupHook\**" />
     <None Remove="StartupHook\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>true</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="buildTransitive\Otel.Kafka.Interceptors.targets">
+      <Pack>true</Pack>
+      <PackagePath>buildTransitive\Otel.Kafka.Interceptors.targets</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);IncludeStartupHookInPackage</TargetsForTfmSpecificContentInPackage>
+  </PropertyGroup>
+
+  <Target Name="IncludeStartupHookInPackage">
+    <MSBuild Projects="StartupHook\Otel.Kafka.Interceptors.StartupHook.csproj"
+             Targets="Build;GetTargetPath"
+             Properties="Configuration=$(Configuration);TargetFramework=net8.0;BuildProjectReferences=false">
+      <Output TaskParameter="TargetOutputs" ItemName="StartupHookBuildOutput" />
+    </MSBuild>
+
+    <ItemGroup Condition=" '@(StartupHookBuildOutput)' != '' ">
+      <TfmSpecificPackageFile Include="@(StartupHookBuildOutput -> '%(FullPath)')">
+        <PackagePath>contentFiles\any\any\startupHook\%(Filename)%(Extension)</PackagePath>
+        <BuildAction>None</BuildAction>
+      </TfmSpecificPackageFile>
+    </ItemGroup>
+  </Target>
 </Project>

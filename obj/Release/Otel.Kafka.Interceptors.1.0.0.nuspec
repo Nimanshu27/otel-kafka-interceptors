@@ -3,9 +3,14 @@
   <metadata>
     <id>Otel.Kafka.Interceptors</id>
     <version>1.0.0</version>
-    <authors>Otel.Kafka.Interceptors</authors>
-    <description>Package Description</description>
-    <repository type="git" />
+    <authors>Nimanshukumar Patel</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/your-org/otel-kafka-interceptors</projectUrl>
+    <description>Configuration-driven OpenTelemetry interceptors for Kafka producers and consumers, with zero-touch startup hook support.</description>
+    <tags>opentelemetry kafka tracing diagnostics interceptors</tags>
+    <repository type="git" url="https://github.com/your-org/otel-kafka-interceptors" branch="refs/heads/startup-hooks" commit="8e126122040282e2ad436c095bb9436fe2a8f8a7" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Castle.Core" version="5.2.1" exclude="Build,Analyzers" />
@@ -15,11 +20,20 @@
         <dependency id="Microsoft.Extensions.Options" version="9.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Options.ConfigurationExtensions" version="9.0.0" exclude="Build,Analyzers" />
         <dependency id="OpenTelemetry" version="1.13.1" exclude="Build,Analyzers" />
+        <dependency id="OpenTelemetry.Exporter.OpenTelemetryProtocol" version="1.13.0" exclude="Build,Analyzers" />
+        <dependency id="OpenTelemetry.Extensions.Hosting" version="1.13.0" exclude="Build,Analyzers" />
+        <dependency id="OpenTelemetry.Instrumentation.Http" version="1.13.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
+    <contentFiles>
+      <files include="any/any/startupHook/Otel.Kafka.Interceptors.StartupHook.dll" buildAction="None" />
+    </contentFiles>
   </metadata>
   <files>
-    <file src="/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/bin/Release/net8.0/Otel.Kafka.Interceptors.dll" target="lib/net8.0/Otel.Kafka.Interceptors.dll" />
-    <file src="/Users/Nimanshukumar.Patel/source/students/otel/Otel.Kafka.Interceptors/bin/Release/net8.0/Otel.Kafka.Interceptors.xml" target="lib/net8.0/Otel.Kafka.Interceptors.xml" />
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/bin/Release/net8.0/Otel.Kafka.Interceptors.dll" target="lib/net8.0/Otel.Kafka.Interceptors.dll" />
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/bin/Release/net8.0/Otel.Kafka.Interceptors.xml" target="lib/net8.0/Otel.Kafka.Interceptors.xml" />
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/StartupHook/bin/Release/net8.0/Otel.Kafka.Interceptors.StartupHook.dll" target="contentFiles/any/any/startupHook/Otel.Kafka.Interceptors.StartupHook.dll" />
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/README.md" target="README.md" />
+    <file src="/Users/Nimanshukumar.Patel/source/students/otel/otel-kafka-interceptors/buildTransitive/Otel.Kafka.Interceptors.targets" target="buildTransitive/Otel.Kafka.Interceptors.targets" />
   </files>
 </package>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Otel.Kafka.Interceptors.StartupHook")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b077cfb7e9cd8f9e2edd78d8f38021d7035c66b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e126122040282e2ad436c095bb9436fe2a8f8a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Otel.Kafka.Interceptors.StartupHook")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Otel.Kafka.Interceptors.StartupHook")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
